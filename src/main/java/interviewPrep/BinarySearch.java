@@ -10,7 +10,7 @@ import static org.junit.Assert.assertTrue;
 
 /**
  * Created by rob on 6/14/17.
- * Implement binary search of a sorted array of integers
+ * Implement binary search of a sorted array of integersasdsad
  */
 public class BinarySearch {
 

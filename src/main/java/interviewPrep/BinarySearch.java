@@ -10,11 +10,11 @@ import static org.junit.Assert.assertTrue;
 
 /**
  * Created by rob on 6/14/17.
- * Implement binary search of a sorted array of integersasdsad
+ * Implement binary search of a sorted array of integers
  */
 public class BinarySearch {
 
-    private static final int RANDOM_TEST_AMOUNT = 25;
+    private static final int RANDOM_TEST_AMOUNT = 2500;
 
     public static void main(String args[]) {
 
@@ -35,6 +35,9 @@ public class BinarySearch {
         }
         for (int i = RANDOM_TEST_AMOUNT; i > 0; i--) {
             int number = random.nextInt();
+            if (i % 2 == 0) {
+                number = tuple.arr[i - 1];
+            }
             Boolean exist = tuple.existInArr.get(number);
             if (exist != null)
                 assertTrue(binarySearch(tuple.arr, 0, tuple.arr.length - 1, number));
